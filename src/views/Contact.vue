@@ -1,11 +1,11 @@
 <template>
   <div id="contact">
-    <!-- HOMEPAGE STARTS -->
+    <!-- CONTACT PAGE STARTS -->
     <div class="section">
       <div class="container">
 
         <div class="content is-medium has-text-centered">
-          <h1 class="title is-1">THE HUME TEAM</h1>
+          <h1 class="title is-1">The HUME Team</h1>
           <p>
             Four experienced human beings who believe that reason and passion drive action.<br>
             Who know that standard approaches don’t win.<br>
@@ -25,13 +25,11 @@
                 <p class="title">
                   Pamela<br>Divinsky
                 </p>
-                <p class="subtitle">
-                  pamela@hume.works
-                </p>
-                <p class="subtitle">
-                  416.562.6414
-                </p>
               </div>
+              <footer class="card-footer">
+                <a href="mailto: pamela@hume.works" class="card-footer-item">Email</a>
+                <a @click="copy('416.562.6414')" href="" class="card-footer-item">Phone</a>
+              </footer>
             </div>
           </div>
           <div class="column">
@@ -40,13 +38,11 @@
                 <p class="title">
                   Brendan<br>Howley
                 </p>
-                <p class="subtitle">
-                  brendan@hume.works
-                </p>
-                <p class="subtitle">
-                  226.880.1479
-                </p>
               </div>
+              <footer class="card-footer">
+                <a href="mailto: brendan@hume.works" class="card-footer-item">Email</a>
+                <a @click="copy('226.880.1449')" href="" class="card-footer-item">Phone</a>
+              </footer>
             </div>
           </div>
           <div class="column">
@@ -55,13 +51,11 @@
                 <p class="title">
                   Rami<br>Lippa
                 </p>
-                <p class="subtitle">
-                  rami@hume.works
-                </p>
-                <p class="subtitle">
-                  647.528.2417
-                </p>
               </div>
+              <footer class="card-footer">
+                <a href="mailto: rami@hume.works" class="card-footer-item">Email</a>
+                <a @click="copy('647.528.2417')" href="" class="card-footer-item">Phone</a>
+              </footer>
             </div>
           </div>
           <div class="column">
@@ -70,19 +64,17 @@
                 <p class="title">
                   Nikolai<br>Howley
                 </p>
-                <p class="subtitle">
-                  nikolai@hume.works
-                </p>
-                <p class="subtitle">
-                  226.880.1479
-                </p>
               </div>
+              <footer class="card-footer">
+                <a href="mailto: nikolai@hume.works" class="card-footer-item">Email</a>
+                <a @click="copy('226.880.1479')" href="" class="card-footer-item">Phone</a>
+              </footer>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- HOMEPAGE ENDS -->
+    <!-- CONTACT PAGE ENDS -->
   </div>
 </template>
 
@@ -93,26 +85,39 @@
 export default {
   name: "Contact",
   components: {},
+  methods: {
+    copy: (number) => {
+      navigator.clipboard.writeText(number).then(() => {
+        alert('Phone number copied to clipboard!');
+      })
+    }
+  }
 };
 </script>
 
 <style lang="scss">
 #contact {
-  min-height: calc(100% - 52px);
-  margin-top: 52px;
+  min-height: calc(100%);
+  padding-top: 52px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 52px;
+  h1.title {
+    color: #007191;
+    font-weight: bold;
+  }
+  .columns {
+    margin-top: 2rem;
+  }
 }
 .card-content {
-  .title { 
-    margin-bottom: 2rem;
-  }
   .subtitle {
     padding: .5rem;
     margin: 0;
   }
+}
+a.card-footer-item {
+  color: #007191 !important;
 }
 </style>
 

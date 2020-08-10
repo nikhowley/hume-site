@@ -4,7 +4,7 @@
     <div class="section">
       <div class="container">
         <div class="content has-text-centered">
-          <h1 class="title is-1">TRUST CHANGES EVERYTHING</h1>
+          <h1 class="title is-1">Trust changes everything.</h1>
           <p>
             With trust your audiences follow you, give you permission to operate and work with you to co-create value.
             <br>Trust creates human connections. Improves performance. Strengthens loyalty. And yes, generates revenue. 
@@ -24,9 +24,9 @@
           <p>
             BECAUSE THEY ARE CREATED WITH YOUR AUDIENCES, IN REAL TIME.
           </p>
-          <h2 class="subtitle is-3">HUME.WORKS: NETWORKING TRUST</h2>
+          <h2 class="subtitle is-3">HUME.WORKS: Networking Trust</h2>
           <div class="button-container">
-            <button class="button is-medium is-primary">play trust video</button>
+            <button class="button is-medium">play trust video</button>
           </div>
         </div>
       </div>
@@ -52,10 +52,18 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  h1.title, h2.subtitle{
+    font-weight: bold;
+    color: #007191;
+  }
 }
 .button-container {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+.button {
+  background: #007191;
+  color: white;
 }
 </style>

@@ -31,4 +31,4 @@ git init
 git add .
 git commit -m "changelog"
  
-git push -f https://github.com/nikhowley/hume-works.git master:gh-pages
+git push -f https://github.com/nikhowley/hume-site.git master:gh-pages

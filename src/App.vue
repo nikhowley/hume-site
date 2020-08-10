@@ -5,7 +5,7 @@
       <div class="container">
       <div class="navbar-brand">
         <router-link to="/" class="navbar-item navbar-img" >
-          <img id="navbarLogo" src=".\assets\logo-transparent.png">
+          <img id="navbarLogo" src=".\assets\logo2.png">
         </router-link>
 
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -55,7 +55,7 @@ body {
   padding: 0;
   font-family: open-sans, sans-serif;
   height: 100%;
-  overflow: hidden;
+  overflow: scroll;
 }
 #app {
   height: 100%;
@@ -63,20 +63,21 @@ body {
 
 // NAVBAR
 .navbar {
-  // padding: .5rem 0;
+  // height: 100px;
   box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
-  .navbar-img {
-    padding-left: 0;
-    @media only screen and (max-width: 1080px) {
-      padding-left: 1rem;
-    }
+  .navbar-img img {
+    height: 100px;
   } 
   .navbar-item {
     text-transform: uppercase;
-    #navbarLogo {
-      width: 250px;
-      max-height: 100px;
+    &:hover {
+      background: none;
+      color: #007191;
     }
+  }
+  .router-link-exact-active.router-link-active {
+    background: none;
+    color: #007191;
   }
 }
 
