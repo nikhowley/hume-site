@@ -5,7 +5,7 @@
       <div class="carousel-cell">
         <div class="container">          
           <h1 class="title">HUMEoverview</h1>
-          <h2 class="subtitle">I don't think we need an "overview" slide. If we do, it should be on the homepage. This whole <i>page</i> (hume.works/products) is the overview</h2>
+          <h2 class="subtitle">Do we need an "overview" slide? If we do, should it be on the homepage? This whole <i>page</i> (hume.works/products) kind of an overview</h2>
           <img src="@/assets/products/cycle.png" alt="">
         </div>
       </div>
@@ -75,14 +75,14 @@
       <div class="carousel-cell">
         <div class="container">
           <h1 class="title">HUMEdashboard</h1>
-          <h2 class="subtitle">This slide feels superfluous to me</h2>
+          <h2 class="subtitle">This slide feels superfluous to me, thoughts?</h2>
           <img src="@/assets/products/scenario-space.png" alt="">
         </div>
       </div>
       <div class="carousel-cell">
         <div class="container">
           <h1 class="title">HUMEoffering</h1>
-          <h2 class="subtitle">This should go on the homepage, in my opinion</h2>
+          <h2 class="subtitle">This should go on the homepage, thoughts?</h2>
           <img src="@/assets/products/hume-offering.png" alt="">
         </div>
       </div>
