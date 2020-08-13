@@ -23,11 +23,11 @@
             products
           </router-link>
 
-          <router-link to="/about" class="navbar-item">
+          <!-- <router-link to="/about" class="navbar-item">
             pricing
-          </router-link>
+          </router-link> -->
 
-          <router-link to="/about" class="navbar-item">
+          <router-link to="/clients" class="navbar-item">
             clients
           </router-link>
 
@@ -39,9 +39,24 @@
       </div>
     </nav>
     <!-- NAVBAR ENDS -->
-    <router-view />
+    <!-- <transition name="fade"> -->
+      <router-view />
+    <!-- </transition> -->
   </div>
 </template>
+
+<script>
+export default {
+  name: "App",
+  data: () => {
+    return {
+      show: true
+    }
+  },
+  components: {},
+  methods: {}
+};
+</script>
 
 <style lang="scss">
 @import url("https://use.typekit.net/fsu6rsx.css");
@@ -63,13 +78,17 @@ body {
 
 // NAVBAR
 .navbar {
-  // height: 100px;
+  height: 76px;
   box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
-  .navbar-img img {
-    height: 100px;
+  #navbar-logo {
+    height: 50px;
   } 
   .navbar-item {
     text-transform: uppercase;
+    img {
+      max-height: unset !important;
+      height: 50px;
+    }
     &:hover {
       background: none;
       color: #007191;
@@ -78,9 +97,17 @@ body {
   .router-link-exact-active.router-link-active {
     background: none;
     color: #007191;
+    font-weight: bold;
   }
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s;
+}
 
-
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>

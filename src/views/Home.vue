@@ -25,9 +25,9 @@
             BECAUSE THEY ARE CREATED WITH YOUR AUDIENCES, IN REAL TIME.
           </p>
           <h2 class="subtitle is-3">HUME.WORKS: Networking Trust</h2>
-          <div class="button-container">
+          <!-- <div class="button-container">
             <button class="button is-medium">play trust video</button>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -47,8 +47,8 @@ export default {
 
 <style lang="scss">
 #home {
-  min-height: calc(100% - 52px);
-  margin-top: 52px;
+  min-height: calc(100%);
+  // margin-top: 52px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,13 +57,10 @@ export default {
     color: #007191;
   }
 }
-.button-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.button {
-  background: #007191;
-  color: white;
-}
+// .button-container {
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+// }
+
 </style>

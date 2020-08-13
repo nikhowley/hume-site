@@ -123,7 +123,7 @@ export default {
 
 <style lang="scss">
 #products {
-  min-height: calc(100% - 52px);
+  // min-height: 100%;
   // margin-top: 52px;
   display: flex;
   flex-direction: column;
@@ -131,7 +131,8 @@ export default {
 }
 .carousel-cell {
   width: 100%;
-  min-height: calc(100vh - 52px);
+  min-height: calc(100vh - 76px);
+  // overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;

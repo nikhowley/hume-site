@@ -28,7 +28,7 @@
               </div>
               <footer class="card-footer">
                 <a href="mailto: pamela@hume.works" class="card-footer-item">Email</a>
-                <a @click="copy('416.562.6414')" href="" class="card-footer-item">Phone</a>
+                <a href="tel: 4165626414" class="card-footer-item">Phone</a>
               </footer>
             </div>
           </div>
@@ -41,7 +41,7 @@
               </div>
               <footer class="card-footer">
                 <a href="mailto: brendan@hume.works" class="card-footer-item">Email</a>
-                <a @click="copy('226.880.1449')" href="" class="card-footer-item">Phone</a>
+                <a href="tel: 2268801449" class="card-footer-item">Phone</a>
               </footer>
             </div>
           </div>
@@ -54,7 +54,7 @@
               </div>
               <footer class="card-footer">
                 <a href="mailto: rami@hume.works" class="card-footer-item">Email</a>
-                <a @click="copy('647.528.2417')" href="" class="card-footer-item">Phone</a>
+                <a href="tel: 6475282417" class="card-footer-item">Phone</a>
               </footer>
             </div>
           </div>
@@ -67,7 +67,7 @@
               </div>
               <footer class="card-footer">
                 <a href="mailto: nikolai@hume.works" class="card-footer-item">Email</a>
-                <a @click="copy('226.880.1479')" href="" class="card-footer-item">Phone</a>
+                <a href="tel: 2268801479" class="card-footer-item">Phone</a>
               </footer>
             </div>
           </div>
@@ -98,7 +98,7 @@ export default {
 <style lang="scss">
 #contact {
   min-height: calc(100%);
-  padding-top: 52px;
+  padding-top: 76px;
   display: flex;
   flex-direction: column;
   justify-content: center;
