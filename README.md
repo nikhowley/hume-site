@@ -32,3 +32,5 @@ git add .
 git commit -m "changelog"
  
 git push -f https://github.com/nikhowley/hume-site.git master:gh-pages
+
+(linkedin, twitter, instagram, facebook)

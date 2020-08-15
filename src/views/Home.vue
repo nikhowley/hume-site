@@ -25,9 +25,11 @@
             BECAUSE THEY ARE CREATED WITH YOUR AUDIENCES, IN REAL TIME.
           </p>
           <h2 class="subtitle is-3">HUME.WORKS: Networking Trust</h2>
-          <!-- <div class="button-container">
-            <button class="button is-medium">play trust video</button>
-          </div> -->
+          <!-- <img src="@/assets/products/cycle.png" alt=""> -->
+          <img class="img-offering" src="@/assets/products/hume-offering.png" alt="">
+          <div class="button-container">
+            <router-link to="/products" class="button">view product offering</router-link>
+          </div>
         </div>
       </div>
     </div>
@@ -41,6 +43,11 @@
 
 export default {
   name: "Home",
+  data () {
+    return {
+      show: false
+    }
+  },
   components: {}
 };
 </script>
@@ -48,13 +55,24 @@ export default {
 <style lang="scss">
 #home {
   min-height: calc(100%);
-  // margin-top: 52px;
+  margin-top: 76px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   h1.title, h2.subtitle{
     font-weight: bold;
     color: #007191;
+  }
+  h2.subtitle {
+    margin-bottom: 3rem;
+  }
+  .img-offering {
+    max-width: 940px;
+    margin-bottom: 2rem;
+  }
+  .button { 
+    background: #007191;
+    color: white;
   }
 }
 // .button-container {

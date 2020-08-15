@@ -5,14 +5,14 @@
         <div class="field">
           <label class="label">Name</label>
           <div class="control">
-            <input class="input" type="text" placeholder="e.g Alex Smith">
+            <input class="input" type="text" placeholder="name">
           </div>
         </div>
 
         <div class="field">
           <label class="label">Email</label>
           <div class="control">
-            <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+            <input class="input" type="password" placeholder="password">
           </div>
         </div>
         <button class="button">Log in</button>
@@ -23,7 +23,7 @@
 
 <style lang="scss">
 #clients {
-  min-height: calc(100%);
+  min-height: calc(100% - 48px);
   padding-top: 76px;
   display: flex;
   flex-direction: column;

@@ -39,9 +39,14 @@
       </div>
     </nav>
     <!-- NAVBAR ENDS -->
-    <!-- <transition name="fade"> -->
-      <router-view />
-    <!-- </transition> -->
+    <router-view />
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          © 2020 HUME.WORKS. All rights reserved.
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -50,7 +55,7 @@ export default {
   name: "App",
   data: () => {
     return {
-      show: true
+      show: false
     }
   },
   components: {},
@@ -70,7 +75,7 @@ body {
   padding: 0;
   font-family: open-sans, sans-serif;
   height: 100%;
-  overflow: scroll;
+  // overflow: scroll;
 }
 #app {
   height: 100%;
@@ -101,9 +106,14 @@ body {
   }
 }
 
+.footer {
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  background: none;
+}
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 1s;
+  transition: opacity .5s;
 }
 
 .fade-enter,

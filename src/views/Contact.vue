@@ -5,7 +5,7 @@
       <div class="container">
 
         <div class="content is-medium has-text-centered">
-          <h1 class="title is-1">The HUME Team</h1>
+          <h1 class="title is-1">The HUME team</h1>
           <p>
             Four experienced human beings who believe that reason and passion drive action.<br>
             Who know that standard approaches don’t win.<br>
@@ -97,7 +97,7 @@ export default {
 
 <style lang="scss">
 #contact {
-  min-height: calc(100%);
+  min-height: calc(100% - 48px);
   padding-top: 76px;
   display: flex;
   flex-direction: column;
