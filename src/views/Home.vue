@@ -1,7 +1,18 @@
 <template>
   <div id="home">
-    <!-- HOMEPAGE STARTS -->
-    <div class="section">
+    <!-- HERO STARTS -->
+    <section class="hero is-primary is-large">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-1 has-text-centered">
+            Networking Trust.
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!-- HERO ENDS -->
+    <!-- TRUST BLURB STARTS -->
+    <div class="section trust">
       <div class="container">
         <div class="content has-text-centered">
           <h1 class="title is-1">Trust changes everything.</h1>
@@ -24,16 +35,108 @@
           <p>
             BECAUSE THEY ARE CREATED WITH YOUR AUDIENCES, IN REAL TIME.
           </p>
-          <h2 class="subtitle is-3">HUME.WORKS: Networking Trust</h2>
-          <!-- <img src="@/assets/products/cycle.png" alt=""> -->
-          <img class="img-offering" src="@/assets/products/hume-offering.png" alt="">
-          <div class="button-container">
-            <router-link to="/products" class="button">view product offering</router-link>
+          <!-- <div class="button-container">
+            <router-link to="/products" class="button">View product offering</router-link>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- TRUST BLURB ENDS -->
+    <!-- OFFERING STARTS -->
+    <div class="section offering">
+      <h1 class="title is-1 has-text-centered">How HUME.WORKS</h1>
+      <div class="container content">
+        <h2 class="subtitle is-4">TOOLS – CREATE STORIES THAT PENETRATE</h2>
+        <p class="subtitle is-6">Unearth the language and values to create stories that generate trust networks</p>
+        <div class="columns">
+          <div class="column">
+            <div class="card has-text-centered">
+              <div class="card-content">
+                <p class="title">STORYengine</p>
+                <p class="subtitle">Create compelling story outlines.</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card has-text-centered">
+              <div class="card-content">
+                <p class="title">VALUEstock</p>
+                <p class="subtitle">Identify the values that are shaping conversations.</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card has-text-centered">
+              <div class="card-content">
+                <p class="title">IMAGEmotives</p>
+                <p class="subtitle">Select your most resonant images</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container content">
+        <h2 class="subtitle is-4">ANALYTICS – VALIDATED QUANTIFIED HUMAN INSIGHTS</h2>
+        <p class="subtitle is-6">Map the relevance of language and values, identify the trust gaps, and build trust networks.</p>
+        <div class="columns">
+          <div class="column">
+            <div class="card has-text-centered">
+              <div class="card-content">
+                <p class="title">INTENSITYmaps</p>
+                <p class="subtitle">Evaluate the salience and incidence of language and values.</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card has-text-centered">
+              <div class="card-content">
+                <p class="title">TRUSTgaps</p>
+                <p class="subtitle">See the deltas in trust over time.</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card has-text-centered">
+              <div class="card-content">
+                <p class="title">TRUSTnetworks</p>
+                <p class="subtitle">Map which values create trust networks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="container content">
+        <h2 class="subtitle is-4">IMPACT – MEASURE AND GROW TRUST</h2>
+        <p class="subtitle is-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit magni at laboriosam reiciendis minus optio, expedita dolorum quam aliquid debitis eius aut.</p>
+        <div class="columns">
+          <div class="column">
+            <div class="card has-text-centered">
+              <div class="card-content">
+                <p class="title">SCENARIOspace</p>
+                <p class="subtitle">Understand future possibilities.</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card has-text-centered">
+              <div class="card-content">
+                <p class="title">TRUSTequity</p>
+                <p class="subtitle">See trust assets and weaknesses.</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card has-text-centered">
+              <div class="card-content">
+                <p class="title">HUMEdash</p>
+                <p class="subtitle">Tools and analytics in one place, in real time.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- HOMEPAGE ENDS -->
+    <!-- OFFERING ENDS -->
   </div>
 </template>
 
@@ -54,31 +157,65 @@ export default {
 
 <style lang="scss">
 #home {
-  min-height: calc(100%);
-  margin-top: 76px;
+  margin-top: 64px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  h1.title, h2.subtitle{
-    font-weight: bold;
-    color: #007191;
-  }
-  h2.subtitle {
-    margin-bottom: 3rem;
-  }
-  .img-offering {
-    max-width: 940px;
-    margin-bottom: 2rem;
-  }
-  .button { 
+  .hero {
     background: #007191;
-    color: white;
+    h1 {
+      color: #fefefe;
+      font-weight: bold;
+    }
+  }
+  .trust {
+    border-bottom: 1px solid #eee;
+    .content {
+      padding: 3rem;    
+      .title, .subtitle{
+        font-weight: bold;
+        color: #007191;
+      }
+      h2.subtitle {
+        margin-bottom: 3rem;
+      }
+    }
+    .button { 
+      margin: 1.5rem;
+      background: #007191;
+      color: #fefefe;
+    }
+  }
+  .offering {
+    padding: 5rem 0;
+    // background: #f3f3f3;
+    .title.is-1 {
+      margin-bottom: 3rem;
+      font-weight: bold;
+      color: #007191;
+    }
+    h2 {
+      margin-bottom: .5rem;
+      color: #007191; 
+    }
+    .columns {
+      padding-bottom: 3rem;
+      margin-bottom: 3rem;
+      padding-top: 1rem;
+      border-bottom: 1px solid #eee;
+      &:last-of-type {
+        margin-bottom: 0;
+        border-bottom: none;
+      }
+    }
+    .card {
+      border-radius: .25rem;
+      height: 100%;
+      .card-content {
+        padding: 5rem 1rem;
+      }
+    }
   }
 }
-// .button-container {
-//   width: 100%;
-//   display: flex;
-//   justify-content: center;
-// }
+
 
 </style>

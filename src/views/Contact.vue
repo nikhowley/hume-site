@@ -110,6 +110,9 @@ export default {
     margin-top: 2rem;
   }
 }
+.card {
+  border-radius: .25rem;
+}
 .card-content {
   .subtitle {
     padding: .5rem;

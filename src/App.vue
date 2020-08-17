@@ -79,24 +79,23 @@ body {
 }
 #app {
   height: 100%;
+  background: #fefefe;
 }
 
 // NAVBAR
 .navbar {
-  height: 76px;
+  background: #fefefe;
   box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
-  #navbar-logo {
-    height: 50px;
-  } 
   .navbar-item {
     text-transform: uppercase;
     img {
       max-height: unset !important;
-      height: 50px;
+      height: 3rem;
     }
     &:hover {
       background: none;
       color: #007191;
+      font-weight: bold;
     }
   }
   .router-link-exact-active.router-link-active {
@@ -109,7 +108,7 @@ body {
 .footer {
   padding-top: 1rem;
   padding-bottom: .5rem;
-  background: none;
+  background: white;
 }
 .fade-enter-active,
 .fade-leave-active {
