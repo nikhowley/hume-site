@@ -3,17 +3,18 @@
     <div class="section">
       <div class="container">
         <div class="field">
-          <label class="label">Name</label>
+          <label class="label">Email</label>
           <div class="control">
             <input class="input" type="text" placeholder="name">
           </div>
         </div>
 
         <div class="field">
-          <label class="label">Email</label>
+          <label class="label">Password</label>
           <div class="control">
             <input class="input" type="password" placeholder="password">
           </div>
+          <a href="#">Forgot password?</a>
         </div>
         <button class="button">Log in</button>
       </div>

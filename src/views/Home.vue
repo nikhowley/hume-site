@@ -36,8 +36,8 @@ When you plug into their stories with our technology, you unlock the trust they 
 Because you have trusted them, and they in turn trust you.
           </p>
           <p>
-            Trust Based Design Solutions.<br>
-An insights and creation engine that scales trust.
+            TRUST BASED DESIGN SOLUTIONS.<br>
+            AN INSIGHTS AND CREATION ENGINE THAT SCALES TRUST.
           </p>
           <!-- <div class="button-container">
             <router-link to="/products" class="button">View product offering</router-link>
@@ -47,8 +47,8 @@ An insights and creation engine that scales trust.
     </div>
     <!-- TRUST BLURB ENDS -->
     <div class="section offering">
+    <img src="assets/Hume_TBD_Image.png" alt="">
       <div class="container">
-        <img src="assets/Hume_TBD_Image.png" alt="">
         <div class="content has-text-centered">
           <h1 class="title is-1">How HUME works</h1>
           <p>
@@ -76,8 +76,8 @@ Generating ever-expanding networks.
 They are sharing what they believe to be true.
 And trusted.</p>
           <p>You scale networks and solutions built on trust.</p>
-          <p>Trust Based Design.<br>
-The way we conquer the challenges of uncertainty.</p>
+          <p>TRUST BASED DESIGN.<br>
+          THE WAY WE CONQUER THE CHALLENGES OF UNCERTAINTY.</p>
         </div>
       </div>
     </div>
@@ -209,7 +209,8 @@ export default {
   .trust {
     // border-bottom: 1px solid #eee;
     .content {
-      padding: 3rem;    
+      padding: 3rem;
+      padding-bottom: 0;  
       .title, .subtitle{
         font-weight: bold;
         color: #007191;
@@ -228,6 +229,10 @@ export default {
     }
   }
   .offering {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 0;
     .content {
       padding: 3rem;    

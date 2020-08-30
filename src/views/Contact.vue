@@ -5,8 +5,8 @@
       <div class="container">
 
         <div class="content is-medium has-text-centered">
-          <h1 class="title is-1">The Hume Team
-<br>Experts in Trust Based Design</h1>
+          <h1 class="title is-1">The Hume Team</h1>
+          <h2 class="subtitle is-4">Experts in Trust Based Design</h2>
           <p>
             Experienced individuals who believe that creating with your audiences is the path to success.<br>
 Because today the demand is for honesty, power and trust.<br>
