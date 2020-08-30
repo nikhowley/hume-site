@@ -5,7 +5,7 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title is-1 has-text-centered">
-            Networking Trust.
+            Trust Based Design
           </h1>
         </div>
       </div>
@@ -15,25 +15,29 @@
     <div class="section trust">
       <div class="container">
         <div class="content has-text-centered">
-          <h1 class="title is-1">Trust changes everything.</h1>
+          <h1 class="title is-1">Radical uncertainty? Rapid response</h1>
           <p>
-            With trust your audiences follow you, give you permission to operate and work with you to co-create value.
-            <br>Trust creates human connections. Improves performance. Strengthens loyalty. And yes, generates revenue. 
+            Living with deep uncertainty?<br>
+Trust Based Design creates solutions.
+That pierce through the unknown.
+And uncover the truths that shape success.
           </p>
           <p>
-            Trust matters more than ever before. Because when survival is on everyone's mind and uncertainty the only known… <br>TRUST IS THE DEFINING BEACON OF POSSIBILITIES.
+            Why?<br>
+Because Trust Based Design solutions are created with your audiences.<br>
+Their perspectives, relationships, experiences and human networks unlock insights instrumental to achieving your ambition.
           </p>
           <p>
-            Trust begins by listening to the stories people are telling. Stories that unearth the language and values that are meaningful. Stories that reveal the TRUST GAPS. And that can shape the conversation and cultivate TRUST NETWORKS.
+            There is untapped insight in the stories your audiences are telling about what matters to them.<br>
+When you plug into their stories with our technology, you unlock the trust they can have in you, and the trust they can create for you.
           </p>
           <p>
-            HUME.WORKS quantifies the intelligence that emerges accurately, at speed and at scale. RELIABLY. PERSISTENTLY. PREDICTIVELY. 
+            Transformed into creators, and sharers, your audiences have the power to create your future.<br>
+Because you have trusted them, and they in turn trust you.
           </p>
           <p>
-            It’s  the technology platform that ensures you CO-CREATE TRUST. It provides the tools to shape the stories with your audiences. Growing trust networks that constantly generate a following. Networks that are responsive and enduring. Communications that are adaptive and rapid. Accurate and impactful. 
-          </p>
-          <p>
-            BECAUSE THEY ARE CREATED WITH YOUR AUDIENCES, IN REAL TIME.
+            Trust Based Design Solutions.<br>
+An insights and creation engine that scales trust.
           </p>
           <!-- <div class="button-container">
             <router-link to="/products" class="button">View product offering</router-link>
@@ -42,8 +46,43 @@
       </div>
     </div>
     <!-- TRUST BLURB ENDS -->
-    <!-- OFFERING STARTS -->
     <div class="section offering">
+      <div class="container">
+        <img src="assets/Hume_TBD_Image.png" alt="">
+        <div class="content has-text-centered">
+          <h1 class="title is-1">How HUME works</h1>
+          <p>
+            Three easy steps, that continue, endlessly.
+          </p>
+          <p>It starts with listening to the human stories of your audiences.
+          Their stories hold deep intelligence and insights into the language and values that matter.
+          They reveal the trust gaps.
+          And trust nodes.
+          </p>
+          <p>Then we analyze and quantify this intelligence.
+          Accurately. In real time. At scale.
+          Reliably. Persistently. Predictively.
+          This is the analytic engine.</p>
+          <p>
+            The second step – you share this intelligence with your audiences, and with them, create the stories, scenarios and solutions.
+You honour their role as authors.
+As truth tellers.
+This equity and respect opens up honesty.
+Honesty unlocks insights that come only when people feel safe to be vulnerable.
+Learning all you need to for the best solutions to emerge.
+          </p>
+          <p>And then, the third step - your audiences share what they have created.
+Generating ever-expanding networks.
+They are sharing what they believe to be true.
+And trusted.</p>
+          <p>You scale networks and solutions built on trust.</p>
+          <p>Trust Based Design.<br>
+The way we conquer the challenges of uncertainty.</p>
+        </div>
+      </div>
+    </div>
+    <!-- OFFERING STARTS -->
+    <!-- <div class="section offering">
       <h1 class="title is-1 has-text-centered">How HUME.WORKS</h1>
       <div class="container content">
         <h2 class="subtitle is-4">TOOLS – CREATE STORIES THAT PENETRATE</h2>
@@ -135,7 +174,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- OFFERING ENDS -->
   </div>
 </template>
@@ -168,7 +207,7 @@ export default {
     }
   }
   .trust {
-    border-bottom: 1px solid #eee;
+    // border-bottom: 1px solid #eee;
     .content {
       padding: 3rem;    
       .title, .subtitle{
@@ -178,6 +217,9 @@ export default {
       h2.subtitle {
         margin-bottom: 3rem;
       }
+      p {
+        font-size: 20px;
+      }
     }
     .button { 
       margin: 1.5rem;
@@ -186,33 +228,24 @@ export default {
     }
   }
   .offering {
-    padding: 5rem 0;
-    // background: #f3f3f3;
-    .title.is-1 {
-      margin-bottom: 3rem;
-      font-weight: bold;
-      color: #007191;
-    }
-    h2 {
-      margin-bottom: .5rem;
-      color: #007191; 
-    }
-    .columns {
-      padding-bottom: 3rem;
-      margin-bottom: 3rem;
-      padding-top: 1rem;
-      border-bottom: 1px solid #eee;
-      &:last-of-type {
-        margin-bottom: 0;
-        border-bottom: none;
+    padding-top: 0;
+    .content {
+      padding: 3rem;    
+      .title, .subtitle{
+        font-weight: bold;
+        color: #007191;
+      }
+      h2.subtitle {
+        margin-bottom: 3rem;
+      }
+      p {
+        font-size: 20px;
       }
     }
-    .card {
-      border-radius: .25rem;
-      height: 100%;
-      .card-content {
-        padding: 5rem 1rem;
-      }
+    .button { 
+      margin: 1.5rem;
+      background: #007191;
+      color: #fefefe;
     }
   }
 }

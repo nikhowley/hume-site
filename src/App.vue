@@ -19,9 +19,9 @@
         <div class="navbar-start"></div>
 
         <div class="navbar-end">
-          <router-link to="/products" class="navbar-item">
+          <!-- <router-link to="/products" class="navbar-item">
             products
-          </router-link>
+          </router-link> -->
 
           <!-- <router-link to="/about" class="navbar-item">
             pricing
@@ -109,6 +109,7 @@ body {
   padding-top: 1rem;
   padding-bottom: .5rem;
   background: white;
+  border-top: none;
 }
 .fade-enter-active,
 .fade-leave-active {

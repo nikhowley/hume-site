@@ -5,17 +5,22 @@
       <div class="container">
 
         <div class="content is-medium has-text-centered">
-          <h1 class="title is-1">The HUME team</h1>
+          <h1 class="title is-1">The Hume Team
+<br>Experts in Trust Based Design</h1>
           <p>
-            Four experienced human beings who believe that reason and passion drive action.<br>
-            Who know that standard approaches don’t win.<br>
-            Because the demand is for honesty and power. And trust.<br>
-            That's why we co-create with audiences.<br>
-            Their stories shape your business success.<br>
-            Their trust is your bottom line.<br>
-            We're inverting the model.<br>
-            Validated, recursive insights and intelligence.<br>
-            Creating human networks that shape and grow trust.<br>
+            Experienced individuals who believe that creating with your audiences is the path to success.<br>
+Because today the demand is for honesty, power and trust.<br>
+We are experts in research, media analytics and human intelligence.<br>
+          </p>
+          <p>
+Strategy, tactics and solutions.<br>
+Branding, marketing and digital media.<br>
+Design, co-creation, story-telling and network technologies.<br>
+User experience, artificial intelligence and augmented reality.<br>
+Citizenship, community building, social change.<br>
+          </p>
+          <p>
+            Achieving impact.
           </p>
         </div>
         <div class="columns">
@@ -24,6 +29,9 @@
               <div class="card-content">
                 <p class="title">
                   Pamela<br>Divinsky
+                </p>
+                <p>
+                  Founder, Strategy & Foresight Lead
                 </p>
               </div>
               <footer class="card-footer">
@@ -38,6 +46,7 @@
                 <p class="title">
                   Brendan<br>Howley
                 </p>
+                <p>Founder, Technology & Innovation Lead</p>
               </div>
               <footer class="card-footer">
                 <a href="mailto: brendan@hume.works" class="card-footer-item">Email</a>
@@ -51,6 +60,7 @@
                 <p class="title">
                   Rami<br>Lippa
                 </p>
+                <p>Founder, Creative & Design Solutions Lead</p>
               </div>
               <footer class="card-footer">
                 <a href="mailto: rami@hume.works" class="card-footer-item">Email</a>
@@ -64,6 +74,7 @@
                 <p class="title">
                   Nikolai<br>Howley
                 </p>
+                <p>UX & Software Development Lead</p>
               </div>
               <footer class="card-footer">
                 <a href="mailto: nikolai@hume.works" class="card-footer-item">Email</a>
@@ -112,6 +123,10 @@ export default {
 }
 .card {
   border-radius: .25rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card-content {
   .subtitle {
