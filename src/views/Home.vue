@@ -2,13 +2,16 @@
   <div id="home">
     <!-- HERO STARTS -->
     <section class="hero is-primary is-large">
-      <div class="hero-body">
-        <div class="container">
+      <!-- <div class="hero-body"> -->
+        <video autoplay muted loop id="myVideo">
+          <source src="@/assets/hero.mp4" type="video/mp4">
+        </video>
+        <!-- <div class="container">
           <h1 class="title is-1 has-text-centered">
             Trust Based Design
           </h1>
-        </div>
-      </div>
+        </div> -->
+      <!-- </div> -->
     </section>
     <!-- HERO ENDS -->
     <!-- TRUST BLURB STARTS -->
@@ -47,7 +50,7 @@ Because you have trusted them, and they in turn trust you.
     </div>
     <!-- TRUST BLURB ENDS -->
     <div class="section offering">
-    <img src="assets/Hume_TBD_Image.png" alt="">
+    <img src="@/assets/Hume_TBD_Image.png" alt="">
       <div class="container">
         <div class="content has-text-centered">
           <h1 class="title is-1">How HUME works</h1>
