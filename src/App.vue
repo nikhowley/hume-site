@@ -7,32 +7,20 @@
         <router-link to="/" class="navbar-item navbar-img" >
           <img id="navbarLogo" src=".\assets\logo2.png">
         </router-link>
-
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <a role="button" @click="toggleNav" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-
-      <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-menu" v-bind:class="{ 'is-active': nav }">
         <div class="navbar-start"></div>
-
         <div class="navbar-end">
-          <!-- <router-link to="/products" class="navbar-item">
-            products
-          </router-link> -->
-
-          <!-- <router-link to="/about" class="navbar-item">
-            pricing
-          </router-link> -->
-
           <router-link to="/clients" class="navbar-item">
-            clients
+            Clients
           </router-link>
-
           <router-link to="/contact" class="navbar-item">
-            get in touch
+            Contact
           </router-link>
         </div>
       </div>
@@ -42,9 +30,7 @@
     <router-view />
     <footer class="footer">
       <div class="content has-text-centered">
-        <p>
-          © 2020 HUME.WORKS. All rights reserved.
-        </p>
+        <p>© 2020 HUME.WORKS. All rights reserved.</p>
       </div>
     </footer>
   </div>
@@ -55,11 +41,15 @@ export default {
   name: "App",
   data: () => {
     return {
-      show: false
+      nav: false
     }
   },
   components: {},
-  methods: {}
+  methods: {
+    toggleNav: function () {
+      this.nav = !this.nav
+    }
+  }
 };
 </script>
 
@@ -75,27 +65,60 @@ body {
   padding: 0;
   font-family: open-sans, sans-serif;
   height: 100%;
-  // overflow: scroll;
 }
 #app {
   height: 100%;
-  background: #fefefe;
+  // background: #fefefe;
 }
 
 // NAVBAR
+.navbar-menu {
+  z-index: 1;
+  box-shadow: none;
+}
 .navbar {
-  background: #fefefe;
+  background: white;
   box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+  .navbar-menu {
+    box-shadow: none;
+    @media only screen and (max-width: 1023px) {
+      padding: 0;
+    }
+  }
   .navbar-item {
-    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    &:hover {
+      background: none;
+      color: #007191;
+    }
+    @media only screen and (max-width: 1023px) {
+      border-top: 1px solid #eeeeee;
+      text-align: center;
+    }
     img {
       max-height: unset !important;
       height: 3rem;
     }
+  }
+  a.navbar-burger {
+    height: 64px;
+    span {
+      height: 3px;
+      width: 18px;
+    }
+    span:nth-child(1) {
+      top: calc(50% - 8px);
+    }
+    span:nth-child(2) {
+      top: calc(50% - 2px);
+    }
+    span:nth-child(3) {
+      top: calc(50% + 4px);
+    }
     &:hover {
       background: none;
       color: #007191;
-      font-weight: bold;
     }
   }
   .router-link-exact-active.router-link-active {
@@ -105,9 +128,10 @@ body {
   }
 }
 
-.footer {
-  padding-top: 1rem;
-  padding-bottom: .5rem;
+  .footer {
+  padding: 0;
+  margin-bottom: 1rem;
+  font-size: 14px;
   background: white;
   border-top: none;
 }

@@ -4,27 +4,27 @@
     <div class="section">
       <div class="container">
 
-        <div class="content is-medium has-text-centered">
-          <h1 class="title is-1">The Hume Team</h1>
-          <h2 class="subtitle is-4">Experts in Trust Based Design</h2>
+        <div class="content has-text-centered">
+          <h1 class="title">The Hume Team</h1>
+          <p><b>Leaders in Trust Based Design</b></p>
           <p>
             Experienced individuals who believe that creating with your audiences is the path to success.<br>
-Because today the demand is for honesty, power and trust.<br>
-We are experts in research, media analytics and human intelligence.<br>
+            Because today the demand is for honesty, power and trust.<br>
+            We are experts in research, media analytics and human intelligence.<br>
           </p>
+          <p><b>We are experts in:</b></p>
           <p>
-Strategy, tactics and solutions.<br>
-Branding, marketing and digital media.<br>
-Design, co-creation, story-telling and network technologies.<br>
-User experience, artificial intelligence and augmented reality.<br>
-Citizenship, community building, social change.<br>
+            Research, media analytics, human intelligence.<br>
+            Strategy, tactics and solutions.<br>
+            Branding, marketing and digital media.<br>
+            Design, co-creation, story-telling and network technologies.<br>
+            User experience, artificial intelligence and augmented reality.<br>
+            Citizenship, community building, social change.<br>
           </p>
-          <p>
-            Achieving impact.
-          </p>
+          <p><b>Achieving impact.</b></p>
         </div>
-        <div class="columns">
-          <div class="column">
+        <div class="columns is-multiline">
+          <div class="column is-half-tablet is-one-quarter-widescreen">
             <div class="card has-text-centered">
               <div class="card-content">
                 <p class="title">
@@ -40,7 +40,7 @@ Citizenship, community building, social change.<br>
               </footer>
             </div>
           </div>
-          <div class="column">
+          <div class="column is-half-tablet is-one-quarter-widescreen">
             <div class="card has-text-centered">
               <div class="card-content">
                 <p class="title">
@@ -54,7 +54,7 @@ Citizenship, community building, social change.<br>
               </footer>
             </div>
           </div>
-          <div class="column">
+          <div class="column is-half-tablet is-one-quarter-widescreen">
             <div class="card has-text-centered">
               <div class="card-content">
                 <p class="title">
@@ -68,7 +68,7 @@ Citizenship, community building, social change.<br>
               </footer>
             </div>
           </div>
-          <div class="column">
+          <div class="column is-half-tablet is-one-quarter-widescreen">
             <div class="card has-text-centered">
               <div class="card-content">
                 <p class="title">
@@ -108,14 +108,27 @@ export default {
 
 <style lang="scss">
 #contact {
-  min-height: calc(100% - 48px);
-  padding-top: 76px;
+  min-height: calc(100vh);
+  padding-top: 64px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  h1.title {
-    color: #007191;
-    font-weight: bold;
+  .content {
+    h1 {
+      color: #007191;
+      font-weight: bold;
+      font-size: 36px;
+      margin-bottom: 1rem;
+      @media only screen and (min-width: 426px) {
+        font-size: 48px;
+      }
+    }
+    p {
+      font-size: 18px;
+      @media only screen and (min-width: 426px) {
+        font-size: 20px;
+      }
+    }
   }
   .columns {
     margin-top: 2rem;
@@ -129,13 +142,17 @@ export default {
   justify-content: space-between;
 }
 .card-content {
-  .subtitle {
-    padding: .5rem;
-    margin: 0;
+  p.title {
+    font-weight: bold;
+    font-size: 36px;
+  }
+  p {
+    font-size: 18px;
   }
 }
 a.card-footer-item {
   color: #007191 !important;
+  font-size: 14px;
 }
 </style>
 
