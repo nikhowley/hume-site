@@ -16,10 +16,10 @@
       <div class="navbar-menu" v-bind:class="{ 'is-active': nav }">
         <div class="navbar-start"></div>
         <div class="navbar-end">
-          <router-link to="/clients" class="navbar-item">
+          <router-link to="/clients" @click="toggleNav" class="navbar-item">
             Clients
           </router-link>
-          <router-link to="/contact" class="navbar-item">
+          <router-link to="/contact" @click="toggleNav" class="navbar-item">
             Contact
           </router-link>
         </div>
