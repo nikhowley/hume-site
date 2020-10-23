@@ -18,7 +18,7 @@
           </div>
           <a href="#">Forgot password?</a>
         </div>
-        <button class="button">Log in</button>
+        <button class="button">LOG IN</button>
       </div>
     </div>
   </div>

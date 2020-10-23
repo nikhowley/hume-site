@@ -3,158 +3,62 @@
     <!-- HERO STARTS -->
     <section class="hero is-primary">
       <video autoplay muted loop id="myVideo">
-        <source src="@/assets/hero.mp4" type="video/mp4">
+        <source src="@/assets/hero2.mp4" type="video/mp4">
       </video>
     </section>
     <!-- HERO ENDS -->
     <!-- UNCERTAINTY BLURB STARTS -->
-    <div class="section uncertainty">
+    <div class="section uncertainty" id="uncertainty">
       <div class="container">
         <div class="content has-text-centered">
           <h1 class="title is-spaced">Uncertainty?</h1>
-          <p><b>Trust Based Design is our solution.</b></p>
-          <p>There is untapped insight in the stories your audiences are telling about what matters to them.<br>
-          When you plug into their stories with our technology, you unlock the trust they can have in you, and the trust they can create for you.</p>
-          <p>Transformed into creators, and sharers, your audiences have the power to create your future.<br>
-          Because you have trusted them, and they in turn trust you.</p>
-          <p><b>Trust Based Design solutions.<br>The way we conquer the challenges of uncertainty.</b></p>
+          <p><b>The best way to understand the future is to create it.</b></p>
+          <p>Hume.Works recasts shared human story as a trust-based intelligence tool, so you can respond to uncertainty confidently, knowing your audience, your trust network, is with you.</p>
+          <p>Our mantra? Know where your story’s going next.</p>
+          <p><b>Trust Based Design solutions.<br>Conquer uncertainty.</b></p>
         </div>
       </div>
     </div>
     <!-- TRUST BLURB ENDS -->
     <section class="tbd">
-      <img src="@/assets/Hume_TBD_Image.png" alt="">
+      <div class="container">
+        <img src="@/assets/graphic.png" alt="">
+      </div>
     </section>
     <div class="section offering">
       <div class="container">
         <div class="content has-text-centered">
           <h1 class="title is-spaced">How HUME works</h1>
-          <p><b>Three easy steps that continue endlessly.</b></p>
+          <p><b>Three easy steps. Three powerful engines.</b></p>
           <div class="columns"></div>
           <div class="list-heading">
             <h1 class="list-number">1</h1>
             <h1 class="list-text left">Listen.</h1>
           </div>
-          <p>It starts with listening to the human stories of your audiences.
-          Their stories hold deep intelligence and insights into the language and values that matter.
-          They reveal the trust gaps.
-          And trust nodes.
-          </p>
-          <p>Then we analyze and quantify this intelligence.
-          Accurately. In real time. At scale.
-          Reliably. Persistently. Predictively.
-          This is the analytic engine.</p>
+          <p>First we listen: listen to the human stories of your audiences.<br>Their stories hold deep intelligence and insights into the emotional language and cultural values that matter.<br>They reveal the trust gaps. And trust nodes.</p>
+          <p>Then, we analyze and quantify this intelligence.<br>Accurately. In real time. At scale. Reliably. Persistently.</p>
+          <p>This is the analytic engine.</p>
           <div class="list-heading">
             <h1 class="list-number">2</h1>
             <h1 class="list-text">Co-create.</h1>
           </div>
-          <p>Share this intelligence with your audiences, and with them, create the stories, scenarios and solutions. You honour their role as authors. As truth tellers. This equity and respect opens up honesty. Honesty unlocks insights that come only when people feel safe to be vulnerable. Learning all you need to for the best solutions to emerge.
-          </p>
+          <p>Share this intelligence with your audiences, and with them, create highly targeted, trusted stories and future-state scenarios.<br>You honour your audience as truth tellers, even as you’re learning all you need to know to tackle uncertainty, knowing what’s coming next.<br>Because your audience has told you so.</p>
+          <p>This is the story engine.</p>
           <div class="list-heading">
             <h1 class="list-number">3</h1>
             <h1 class="list-text">Network.</h1>
           </div>
-          <p>Your audiences share what they have created. Generating ever-expanding networks. They are sharing what they believe to be true. And trusted.</p>
-          <p>You scale networks and solutions built on trust.</p>
-          <p><b>Trust Based Design.<br>An insights and creation engine that scales trust.</b></p>
+          <p>Your audiences share what they’ve created with you. Scaling human trust networks even as they share your stories across their networks.<br>You scale networks and solutions built on trust, co-created with the people who matter most to you.<br>Human story. Bringing us together.</p>
+          <p>This is the trust network engine.</p>
+          <p><b>Trust Based Design. Networking trust.<br>It’s where your story’s going next.</b></p>
         </div>
       </div>
     </div>
-    <!-- OFFERING STARTS -->
-    <!-- <div class="section offering">
-      <h1 class="title is-1 has-text-centered">How HUME.WORKS</h1>
-      <div class="container content">
-        <h2 class="subtitle ">TOOLS – CREATE STORIES THAT PENETRATE</h2>
-        <p class="subtitle is-6">Unearth the language and values to create stories that generate trust networks</p>
-        <div class="columns">
-          <div class="column">
-            <div class="card has-text-centered">
-              <div class="card-content">
-                <p class="title">STORYengine</p>
-                <p class="subtitle">Create compelling story outlines.</p>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card has-text-centered">
-              <div class="card-content">
-                <p class="title">VALUEstock</p>
-                <p class="subtitle">Identify the values that are shaping conversations.</p>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card has-text-centered">
-              <div class="card-content">
-                <p class="title">IMAGEmotives</p>
-                <p class="subtitle">Select your most resonant images</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <footer>
+      <div class="container">
+        Photos with thanks to Mitchell Griest on Unspalsh; Tyler Wang on Pexels; Bruno Felix on Pexels and Callum T on Unsplash.
       </div>
-      <div class="container content">
-        <h2 class="subtitle ">ANALYTICS – VALIDATED QUANTIFIED HUMAN INSIGHTS</h2>
-        <p class="subtitle is-6">Map the relevance of language and values, identify the trust gaps, and build trust networks.</p>
-        <div class="columns">
-          <div class="column">
-            <div class="card has-text-centered">
-              <div class="card-content">
-                <p class="title">INTENSITYmaps</p>
-                <p class="subtitle">Evaluate the salience and incidence of language and values.</p>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card has-text-centered">
-              <div class="card-content">
-                <p class="title">TRUSTgaps</p>
-                <p class="subtitle">See the deltas in trust over time.</p>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card has-text-centered">
-              <div class="card-content">
-                <p class="title">TRUSTnetworks</p>
-                <p class="subtitle">Map which values create trust networks</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> 
-      <div class="container content">
-        <h2 class="subtitle ">IMPACT – MEASURE AND GROW TRUST</h2>
-        <p class="subtitle is-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit magni at laboriosam reiciendis minus optio, expedita dolorum quam aliquid debitis eius aut.</p>
-        <div class="columns">
-          <div class="column">
-            <div class="card has-text-centered">
-              <div class="card-content">
-                <p class="title">SCENARIOspace</p>
-                <p class="subtitle">Understand future possibilities.</p>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card has-text-centered">
-              <div class="card-content">
-                <p class="title">TRUSTequity</p>
-                <p class="subtitle">See trust assets and weaknesses.</p>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card has-text-centered">
-              <div class="card-content">
-                <p class="title">HUMEdash</p>
-                <p class="subtitle">Tools and analytics in one place, in real time.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- OFFERING ENDS -->
+    </footer>
   </div>
 </template>
 
@@ -177,13 +81,21 @@ export default {
 #home {
   display: flex;
   flex-direction: column;
+  .button {
+    // margin-top: 1rem;
+    border: none;
+    &:hover {
+      color:  #007191;
+    }
+  }
   .hero {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     background: black;
-    max-height: 100vh;
-    padding-top: 64px;
+    margin-top: 64px;
+    max-height: 768px;
+    overflow: hidden;
   }
   img{
     max-height: 500px;
@@ -191,10 +103,14 @@ export default {
     display: block;
   }
   .content {
-    padding: 3rem 0;
+    // padding-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media only screen and (min-width: 426px) {
+      margin-top:3rem;
+      // padding: 3rem 0;
+    }
     h1.title {
       font-weight: bold;
       color: #007191;
@@ -232,6 +148,14 @@ export default {
         font-size: 20px;
       }
     }
+  }
+  .tbd {
+    padding: 0 1.5rem;
+  }
+  footer {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: .5rem;
   }
 }
 

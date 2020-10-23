@@ -4,7 +4,7 @@
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="container">
       <div class="navbar-brand">
-        <router-link to="/" class="navbar-item navbar-img" >
+        <router-link to="/" @click.native="closeNav" class="navbar-item navbar-img" >
           <img id="navbarLogo" src=".\assets\logo2.png">
         </router-link>
         <a role="button" @click="toggleNav" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -16,10 +16,13 @@
       <div class="navbar-menu" v-bind:class="{ 'is-active': nav }">
         <div class="navbar-start"></div>
         <div class="navbar-end">
-          <router-link to="/clients" @click="toggleNav" class="navbar-item">
+          <router-link to="/products" @click.native="closeNav" class="navbar-item">
+            Products
+          </router-link>
+          <router-link to="/clients" @click.native="closeNav" class="navbar-item">
             Clients
           </router-link>
-          <router-link to="/contact" @click="toggleNav" class="navbar-item">
+          <router-link to="/contact" @click.native="closeNav" class="navbar-item">
             Contact
           </router-link>
         </div>
@@ -29,8 +32,11 @@
     <!-- NAVBAR ENDS -->
     <router-view />
     <footer class="footer">
-      <div class="content has-text-centered">
-        <p>© 2020 HUME.WORKS. All rights reserved.</p>
+      <div class="container">
+        <div class="content has-text-centered">
+          <!-- <p>IMAGE 1 – Photo by Mitchell Griest on Unsplash, IMAGE 2 – Photo by Tyler Wang from Pexels, IMAGE 3 – Photo by Bruno Felix from Pexels, IMAGE 4 – Photo by Callum T on Unsplash, IMAGE 5 – (L-R) Photo by Jakaylah Toney on Unsplash; Irena Carpaccio on Unsplash and Zulmaury-Saavedra on Unsplash<br>© 2020 HUME.WORKS. All rights reserved.</p> -->
+          <p>© 2020 HUME.WORKS. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   </div>
@@ -48,6 +54,9 @@ export default {
   methods: {
     toggleNav: function () {
       this.nav = !this.nav
+    },
+    closeNav: function () {
+      this.nav = false
     }
   }
 };

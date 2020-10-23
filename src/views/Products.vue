@@ -1,166 +1,72 @@
 <template>
   <div id="products">
     <!-- PRODUCTS PAGE STARTS -->
-    <flickity ref="flickity" :options="flickityOptions">
-      <!-- <div class="carousel-cell">
-        <div class="container">          
-          <h1 class="title">HUMEoverview</h1>
-          <h2 class="subtitle">Do we need an "overview" slide? If we do, should it be on the homepage? This whole <i>page</i> (hume.works/products) kind of an overview</h2>
-          <img src="@/assets/products/cycle.png" alt="">
-        </div>
-      </div> -->
-      <div class="carousel-cell">
-        <div class="container">
-          <h1 class="title">HUMEengine</h1>
-          <h2 class="subtitle">Each slide should have a subtitle</h2>
-          <img src="@/assets/products/hume-engine.png" alt="">
-        </div>
-      </div>
-      <div class="carousel-cell">
-        <div class="container">
-          <h1 class="title">IMAGEmotives</h1>
-          <h2 class="subtitle">Select your most resonant images</h2>
-          <img src="@/assets/products/image-motives.png" alt="">
-        </div>
-      </div>
-      <div class="carousel-cell">
-        <div class="container">
-          <h1 class="title">VALUEstock</h1>
-          <h2 class="subtitle">Identify the language and values that are shaping your conversations</h2>
-          <img src="@/assets/products/value-stock.png" alt="">
-        </div>
-      </div>
-      <div class="carousel-cell">
-        <div class="container">
-          <h1 class="title">INTESITYmaps</h1>
-          <h2 class="subtitle">Evaluate the salience and incidence of your language and values</h2>
-          <img src="@/assets/products/intensity-maps.png" alt="">
-        </div>
-      </div>
-      <div class="carousel-cell">
-        <div class="container">
-          <h1 class="title">STORYengine</h1>
-          <h2 class="subtitle">Each slide should have a subtitle</h2>
-          <img src="@/assets/products/story-engine.png" alt="">
-        </div>
-      </div>
-      <div class="carousel-cell">
-        <div class="container">
-          <h1 class="title">TRUSTgaps</h1>
-          <h2 class="subtitle">See the peaks and gaps in your audience's trust</h2>
-          <img src="@/assets/products/trust-gaps.png" alt="">
-        </div>
-      </div>
-      <div class="carousel-cell">
-        <div class="container">
-          <h1 class="title">TRUSTnetworks</h1>
-          <h2 class="subtitle">Map which values create your trust networks</h2>
-          <img src="@/assets/products/trust-networks.png" alt="">
-        </div>
-      </div>
-      <div class="carousel-cell">
-        <div class="container">
-          <h1 class="title">SCENARIOspace</h1>
-          <h2 class="subtitle">Understand your future possibilities</h2>
-          <img src="@/assets/products/scenario-space.png" alt="">
-        </div>
-      </div>
-      <div class="carousel-cell">
-        <div class="container">
-          <h1 class="title">TRUSTequity</h1>
-          <h2 class="subtitle">See your trust assets and weaknesses</h2>
-          <img src="@/assets/products/trust-equity.png" alt="">
-        </div>
-      </div>
-      <div class="carousel-cell">
-        <div class="container">
-          <h1 class="title">HUMEdashboard</h1>
-          <h2 class="subtitle">This slide feels superfluous to me, thoughts?</h2>
-          <img src="@/assets/products/hume-dashboard.png" alt="">
-        </div>
-      </div>
-      <!-- <div class="carousel-cell">
-        <div class="container">
-          <h1 class="title">HUMEoffering</h1>
-          <h2 class="subtitle">This should go on the homepage, thoughts?</h2>
-          <img src="@/assets/products/hume-offering.png" alt="">
-        </div>
-      </div> -->
-    </flickity>
-    <!-- <div class="section">
+    <section class="cta">
       <div class="container">
-
+        <div class="content has-text-centered">
+          <button class="button is-large">REQUEST A LIVE DEMO</button>
+          <p>or</p>
+          <h1 class="title">View Case Study Demo:</h1>
+          <iframe src="https://player.vimeo.com/video/471220323" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
       </div>
-    </div> -->
-    <!-- PRODUCTS PAGE ENDS -->
+    </section>
+    <footer>
+      <div class="container">
+        Photos with thanks to Alex Moiseev on Unsplash; BBH Singapore on Unsplash; Harris Memovic on Unsplash; Jakayla Toney on Unsplash; Jurica Koletic on Unsplash; Jörge Graphiste on Pexels.
+      </div>
+    </footer>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
-import Flickity from 'vue-flickity';
-
+// @ is an alias to /srcs
 
 export default {
-  name: "Products",
-  data () {
-    return {
-      flickityOptions: {
-        initialIndex: 0,
-        prevNextButtons: true,
-        pageDots: true,
-        // autoPlay: 3000,
-        // pauseAutoPlayOnHover: false
-      }
-    }
-  },
-  components: {
-    Flickity
-  }
+  name: "Products"
 };
 </script>
 
 <style lang="scss">
 #products {
-  min-height: calc(100% - 76px);
-  // margin-top: 76px;
-  // display: flex;
-  // flex-direction: column;
-  justify-content: flex-start;
-}
-.carousel-cell {
-  width: 100%;
-  min-height: calc(100vh - 48px);
-  // overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    h1 {
-      max-width: 768px;
-      font-weight: bold;
-      text-align: center;
-      color: #007191;
-    }
-    h2 {
-      padding-top: .5rem;
-      max-width: 768px;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    img {
-      width: 768px;
+  min-height: calc(100vh);
+  padding-top: 64px;
+  footer {
+    position: absolute; 
+    bottom: 0px;
+    width: 100%; 
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: .5rem;
+  }
+  .cta {
+    margin-top: 3rem;
+    .button {
+    background: #007191;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    border-radius: 34px;
+    &:hover {
+      color: white;
     }
   }
+  p { 
+    margin: 1rem 0;
+  }
+  h1.title {
+      font-weight: bold;
+      color: #007191;
+      margin-bottom: 1rem;
+      margin-top: 0;
+      font-size: 36px;
+      @media only screen and (min-width: 426px) {
+        font-size: 48px;
+      }
+    }
 }
-.flickity-page-dots {
-  bottom: 16px;
 }
 </style>
 
