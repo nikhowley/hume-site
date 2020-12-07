@@ -5,6 +5,11 @@
       <video autoplay muted loop id="myVideo">
         <source src="@/assets/hero2.mp4" type="video/mp4">
       </video>
+      <a href="#uncertainty">
+        <button class="button is-large arrow-button">
+          <i class="fas fa-arrow-down"></i>
+        </button>
+      </a>
     </section>
     <!-- HERO ENDS -->
     <!-- UNCERTAINTY BLURB STARTS -->
@@ -51,6 +56,9 @@
           <p>Your audiences share what they’ve created with you. Scaling human trust networks even as they share your stories across their networks.<br>You scale networks and solutions built on trust, co-created with the people who matter most to you.<br>Human story. Bringing us together.</p>
           <p>This is the trust network engine.</p>
           <p><b>Trust Based Design. Networking trust.<br>It’s where your story’s going next.</b></p>
+          <router-link to="/products" class="navbar-item">
+            <button class="button is-large products-button">PRODUCTS  <i class="fas fa-arrow-right"></i></button>
+          </router-link>
         </div>
       </div>
     </div>
@@ -81,26 +89,38 @@ export default {
 #home {
   display: flex;
   flex-direction: column;
-  .button {
-    // margin-top: 1rem;
-    border: none;
-    &:hover {
-      color:  #007191;
-    }
-  }
   .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: black;
     margin-top: 64px;
-    max-height: 768px;
+    max-height: calc(100vh - 64px);
     overflow: hidden;
+    position: relative;
   }
   img{
     max-height: 500px;
     margin: 0 auto;
     display: block;
+  }
+  .arrow-button{
+    background: #007191;
+    border: 0;
+    width: 64px;
+    height: 64px;
+    color: white;
+    font-size: 32px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 32px;
+    right: calc(50% - 32px);
+    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.5), 0 0 0 1px rgba(10,10,10,.1);
+    @media only screen and (max-width: 1024px) {
+      display: none;
+      // padding: 3rem 0;
+    }
+
   }
   .content {
     // padding-top: 3rem;
@@ -149,6 +169,19 @@ export default {
       }
     }
   }
+  .products-button {
+    background: #007191;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    border-radius: .5rem;
+    i {
+      margin-left: .5rem;
+    }
+    &:hover {
+      color: white;
+    }
+  }
   .tbd {
     padding: 0 1.5rem;
   }
@@ -156,6 +189,7 @@ export default {
     font-size: 14px;
     text-align: center;
     margin-bottom: .5rem;
+    padding: 0 1rem;
   }
 }
 

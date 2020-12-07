@@ -19,6 +19,9 @@
           <router-link to="/products" @click.native="closeNav" class="navbar-item">
             Products
           </router-link>
+          <router-link to="/intelligence" @click.native="closeNav" class="navbar-item">
+            Intelligence
+          </router-link>
           <router-link to="/clients" @click.native="closeNav" class="navbar-item">
             Clients
           </router-link>

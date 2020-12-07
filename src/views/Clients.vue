@@ -18,7 +18,7 @@
           </div>
           <a href="#">Forgot password?</a>
         </div>
-        <button class="button">LOG IN</button>
+        <button class="button">LOG IN <i class="fas fa-arrow-right"></i></button>
       </div>
     </div>
   </div>
@@ -71,7 +71,10 @@
       background: #007191;
       color: white;
       font-size: 16px;
-      border-radius: 34px;
+      border-radius: .5rem;
+      i {
+        margin-left: .5rem;
+      }
       &:hover {
         color: white;
       }
